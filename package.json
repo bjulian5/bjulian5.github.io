@@ -1,0 +1,8 @@
+{
+  "engines": {
+    "node": ">=12.x.x"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.3"
+  }
+}
