@@ -3,10 +3,13 @@
     "node": ">=12.x.x"
   },
   "scripts": {
-    "build": "$(yarn bin resume) export index.html",
+    "build": "$(yarn bin resume) export --theme elegant index.html",
     "test": "$(yarn bin resume) validate"
   },
   "devDependencies": {
     "resume-cli": "^3.0.3"
+  },
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.14.0"
   }
 }
