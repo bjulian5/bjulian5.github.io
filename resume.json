@@ -3,7 +3,7 @@
   "basics": {
     "name": "Julian Brown",
     "label": "Software Engineer",
-    "image": "",
+    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEoGijCUgBHmg/profile-displayphoto-shrink_400_400/0/1600286728204?e=1614816000&v=beta&t=lL4IA1D7EYmBbFFbFyi7Bs-EhCDQzh47tLgqY0EjtDk",
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
@@ -30,7 +30,21 @@
   },
   "work": [
     {
-      "company": "Northrop German",
+      "company": "Yext",
+      "position": "Software Engineer",
+      "website": "https://www.yext.com/",
+      "startDate": "2017-12-03",
+      "endDate": "2020",
+      "summary": "Infrastructure SME/Lead for the Consulting Team (100+ team members)",
+      "highlights": [
+        "Built responsive, and accessible static landing pages for numerous Fortune 500 companies using ES6 Javascript, and Soy Templates (e.g cafe.haagen-dazs.es.yext-cdn.com)",
+        "Decreased CI/CD build times for the Consulting Engineerng monorepo by updating our build system from Make to Bazel.",
+        "Designed and implemented a continues integration tool to build and serve pull requests to Consulting Pages using Docker, Nginx, and Jenkins.",
+        "Designed and implemented a monitoring system for services and products offered by the Consulting organization using Go, Prometheus, and Alertmanager. Alerts and metrics are then routed to a custom dashboard and team slack channels."
+      ]
+    },
+    {
+      "company": "Northrop Grumman",
       "position": "Associate Software Engineer",
       "website": "https://www.northropgrumman.com/",
       "startDate": "2017-07-17",
@@ -73,7 +87,7 @@
       "endDate": "2015-12-07",
       "summary": "Modeling of a Hall Effect thruster using C++ (FA. Dr. Srinivasan)",
       "highlights": [
-        "Modeled particles within a Hall Effect thruster using C++ to produce a real time visual simulation of large quantities of charged particles. Simulation data could then be used to make predictions about the system"
+        "Modeled particles within a Hall Effect thruster using C++ to produce a real time visual simulation charged particles."
       ]
     },
     {
