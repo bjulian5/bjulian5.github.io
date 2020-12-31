@@ -3,7 +3,7 @@
     "node": ">=12.x.x"
   },
   "scripts": {
-    "build": "$(yarn bin resume) export index.html",
+    "build": "$(yarn bin resume) export desktop/index.html",
     "test": "$(yarn bin resume) validate"
   },
   "devDependencies": {
