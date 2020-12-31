@@ -19,10 +19,8 @@ jobs:
     - run: yarn install
     - run: yarn run test
     - run: yarn run build
-    - run: git add index.html
-    - uses: Automattic/action-commit-to-branch@master
+    - uses: actions-js/push@master
       with:
-        branch: gh-pages
-        commit_message: 'generate resume'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'gh-pages'
+        force: true
