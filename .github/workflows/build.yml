@@ -3,7 +3,7 @@ name: Build Artifacts
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   build:
@@ -24,6 +24,6 @@ jobs:
         branch: gh-pages
         add: 'index.html'
         message: 'generate resume'
-        push: 'origin gh-pages --force'
+        push: 'origin gh-pages --force --set-upstream'
       env:
         CI: true
