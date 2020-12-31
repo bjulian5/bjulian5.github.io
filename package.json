@@ -2,6 +2,10 @@
   "engines": {
     "node": ">=12.x.x"
   },
+  "scripts": {
+    "build": "$(yarn bin resume) export index.html",
+    "test": "$(yarn bin resume) validate"
+  },
   "devDependencies": {
     "resume-cli": "^3.0.3"
   }
