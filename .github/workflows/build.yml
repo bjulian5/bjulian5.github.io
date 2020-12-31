@@ -21,7 +21,7 @@ jobs:
     - run: yarn run build
     - uses: EndBug/add-and-commit@v6
       with:
-        add: 'index.html'
+        add: 'desktop/index.html'
         message: 'generate resume'
       env:
         CI: true
