@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - '*'
+      - '!master'
       - '!gh-pages'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:

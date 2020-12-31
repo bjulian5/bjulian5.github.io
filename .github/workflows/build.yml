@@ -3,7 +3,7 @@ name: Build Artifacts
 on:
   push:
     branches:
-      - 'gh-pages'
+      - 'master'
 
 jobs:
   build:
@@ -21,7 +21,9 @@ jobs:
     - run: yarn run build
     - uses: EndBug/add-and-commit@v6
       with:
-        add: 'desktop/index.html'
+        branch: gh-pages
+        add: 'index.html'
         message: 'generate resume'
+        push: 'origin gh-pages --force'
       env:
         CI: true
