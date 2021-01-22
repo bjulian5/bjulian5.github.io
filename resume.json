@@ -157,7 +157,10 @@
         "React",
         "Sass",
         "node.js",
-        "Webpack"
+        "Webpack",
+        "MySQL",
+        "Linux",
+        "AWS"
       ]
     }
   ],
