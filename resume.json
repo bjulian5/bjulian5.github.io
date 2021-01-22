@@ -7,7 +7,7 @@
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Highly motivated software engineer with experience writing high performance software in Go, Java, and C++. Also experienced in building fast, responsive, and accessible websites using core web technologies. A self-starter and passionate about devops, developer productivity, high performance software and distributed systems.",
+    "summary": "Highly motivated software engineer with experience writing software in Go, Java, and C++. Also experienced in building fast, responsive, and accessible websites using core web technologies. A self-starter and passionate about devops, developer productivity, high performance software and distributed systems.",
     "location": {
       "address": "1351 N Rolfe Street ",
       "postalCode": "22209",
@@ -34,7 +34,7 @@
       "position": "Software Engineer",
       "website": "https://www.yext.com/",
       "startDate": "2018-12-03",
-      "summary": "Infrastructure SME/Lead for the Consulting Team (100+ team members)",
+      "summary": "Infrastructure SME/Lead for the Consulting Team",
       "highlights": [
         "Reduced our Fortune 500 clients cost-per-click ad spend by 70% by building fast, responsive and accessible static landing pages using ES6 Javascript, Sass, Webpack, and Soy (Closure) templates (e.g cafe.haagen-dazs.es.yext-cdn.com).",
         "Decreased CI/CD build times by 80% for the Consulting Engineering monorepo by migrating our build system from Make to Bazel.",
@@ -179,4 +179,4 @@
     "version": "v1.0.0",
     "lastModified": "2017-12-24T15:53:00"
   }
- } 
+ }
