@@ -117,7 +117,7 @@
     {
       "institution": "Virginia Tech",
       "url": "https://www.vt.edu",
-      "area": "Aerospace Engineering",
+      "area": "Aerospace Engineering, minors in Math and Astronomy",
       "studyType": "Bachelor",
       "startDate": "2012-08-17",
       "endDate": "2017-05-12",
@@ -126,26 +126,6 @@
         "AOE-2074 - Computation Methods",
         "MATH-4564 - Operational Methods",
         "MATH-4574 - Vector/Complex Analysis"
-      ]
-    },
-    {
-      "institution": "Virginia Tech",
-      "url": "https://www.vt.edu",
-      "area": "Math",
-      "studyType": "Minor",
-      "startDate": "2012-08-17",
-      "endDate": "2017-05-12",
-      "courses": [
-      ]
-    },
-    {
-      "institution": "Virginia Tech",
-      "url": "https://www.vt.edu",
-      "area": "Astronomy",
-      "studyType": "Minor",
-      "startDate": "2012-08-17",
-      "endDate": "2017-05-12",
-      "courses": [
       ]
     }
   ],
