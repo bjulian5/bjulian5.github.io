@@ -52,7 +52,7 @@
       "summary": "",
       "highlights": [
         "Wrote file system libraries with unit and integration tests in C as part common flight software used by other teams.",
-        "Modeled embedded components for the Cygnus Spacecraft in C++ for SITL and HITL simulation testing.",
+        "Modeled embedded components for the Cygnus Spacecraft in C++ for SITL and HITL simulation testing."
       ]
     },
     {
@@ -108,7 +108,7 @@
       "endDate": "2015-08-11",
       "summary": "Impedance Based Structural Health Monitoring Of Hybrid ZnO Smart Composites (Pi: Dr. Philen).",
       "highlights": [
-        "Automated testing and data processing of ZnO smart composites using LabVIEW and Python",
+        "Automated testing and data processing of ZnO smart composites using LabVIEW and Python"
       ]
     }
   ],
@@ -181,7 +181,7 @@
         "node.js",
         "Webpack",
         "MySQL",
-        "Linux",
+        "Linux"
       ]
     }
   ],
