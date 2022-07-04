@@ -3,8 +3,9 @@
     "node": ">=12.x.x"
   },
   "scripts": {
-    "build": "$(yarn bin resume) export --theme paper index.html",
-    "test": "$(yarn bin resume) validate"
+    "build-dev": "$(npm bin)/resume export --theme paper index-dev.html",
+    "build": "$(npm bin)/resume export --theme paper index.html",
+    "test": "$(npm bin)/resume validate"
   },
   "devDependencies": {
     "resume-cli": "^3.0.3"
