@@ -3,7 +3,7 @@
   "basics": {
     "name": "Julian Brown",
     "label": "Software Engineer",
-    "picture": "https://media-exp2.licdn.com/dms/image/C4D03AQEoGijCUgBHmg/profile-displayphoto-shrink_800_800/0/1600286728204?e=1661990400&v=beta&t=QImuaZeV5VmcPw_pK3uRXgyWnxXZb0XI39lWtswkc3s",
+    "picture": "https://media.licdn.com/dms/image/C4D03AQEoGijCUgBHmg/profile-displayphoto-shrink_800_800/0/1600286728204?e=1687392000&v=beta&t=5JR0tr6e00rAjv7X53OcLJQSFPRlccP93e0OgZAkOOE",
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
@@ -31,18 +31,21 @@
   "work": [
     {
       "company": "Stripe",
-      "position": "Software Engineer",
+      "position": "Senior Software Engineer",
       "website": "https://www.stripe.com",
       "startDate": "2021-04-19",
       "summary": "Building secure interfaces between engineers and AWS, IaC abstractions, and control planes for infrastructure change management.",
       "highlights": [
-        "Reduced Reyes follower P99 runtime by 90%, allowing cross-region security group (firewall) rules to propagate within 2-3 minutes, improving the stability of distributed systems that depend on cross-region traffic.",
+        "Leading a year-long project to build a general infrastructure control plane, enabling safe and secure management of infrastructure resources, deployment automation, health monitoring, and automated rollbacks.",
+        "Responsible for conducting customer interviews, creating an MVP, proposing and reviewing design with technical leadership, scoping out work, and writing the majority of the code.",
         "Built a safe and secure interface to AWS (Space Station) allowing the Infra Platform team to remove AWS credentials from most Stripe laptops. This allows for the enforcement of security invariants on 99.5% of all AWS modifications, improving Stripe's security posture.",
+        "Lead operational improvements to Space Station through better instrumentation, monitoring, and alerting. Use the improved observability to reduce command startup time by 75%, saving 800 hours of engineering time a year waiting on Space Station.",
+        "Reduced Reyes follower P99 runtime by 90%, allowing cross-region security group (firewall) rules to propagate within 2-3 minutes, improving the stability of distributed systems that depend on cross-region traffic.",
+        "Eliminated cross-region data transfer for Reyes, saving Stripe $3.7M a year in AWS data transfer costs.",
         "Implemented a heuristic to determine affected Terraform module tests, reducing P90 CI times by 60% and saving $2.7 million each year.",
         "Replaced the heuristic with custom Bazel rules for Terraform, and led the migration to build and test all Terraform code with Bazel.",
         "Moved Stripe to a new AWS region with zero downtime",
         "Wrote a codemod to migrate thousands of Terraform modules from v0.11.5 to v0.13.7 within a few weeks, and added support for modern Terraform versions.",
-        "Designed and led 5 new Stripe engineers to build a tool to attach Terraform plans to pull requests automatically.",
         "Mentored and coached 2 interns as part of our DEI mentorship program that then converted to full time"
       ]
     },
