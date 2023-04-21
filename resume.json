@@ -37,7 +37,7 @@
       "summary": "Building secure interfaces between engineers and AWS, IaC abstractions, and control planes for infrastructure change management.",
       "highlights": [
         "Reduced Reyes follower P99 runtime by 90%, allowing cross-region security group (firewall) rules to propagate within 2-3 minutes, improving the stability of distributed systems that depend on cross-region traffic.",
-        "Built a safe and secure interface to AWS (Space Station) allowing the Infra Platform team to remove AWS credentials from most Stripe laptops. This allows for the enforcement security invariants on 99.5% of all AWS modifications, improving Stripe's security posture.",
+        "Built a safe and secure interface to AWS (Space Station) allowing the Infra Platform team to remove AWS credentials from most Stripe laptops. This allows for the enforcement of security invariants on 99.5% of all AWS modifications, improving Stripe's security posture.",
         "Implemented a heuristic to determine affected Terraform module tests, reducing P90 CI times by 60% and saving $2.7 million each year.",
         "Replaced the heuristic with custom Bazel rules for Terraform, and led the migration to build and test all Terraform code with Bazel.",
         "Moved Stripe to a new AWS region with zero downtime",
