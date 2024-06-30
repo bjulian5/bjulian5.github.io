@@ -2,15 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Julian Brown",
-    "label": "Software Engineer",
-    "picture": "https://media.licdn.com/dms/image/C4D03AQEoGijCUgBHmg/profile-displayphoto-shrink_800_800/0/1600286728204?e=1687392000&v=beta&t=5JR0tr6e00rAjv7X53OcLJQSFPRlccP93e0OgZAkOOE",
+    "label": "Senior Software Engineer",
+    "picture": "./assets/jbrown.jpeg",
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Highly motivated software engineer with experience writing software in Go, Java, and C++. Also experienced in building fast, responsive, and accessible websites using core web technologies. A self-starter and passionate about DevOps, developer productivity, high-performance software, and distributed systems.",
+    "summary": "Senior Software Engineer with 8+ years of experience in large-scale infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
     "location": {
-      "address": "1400 W Street NW",
-      "postalCode": "20009",
+      "address": "901 W ST NW",
+      "postalCode": "20001",
       "city": "Washington",
       "countryCode": "US",
       "region": "District of Columbia"
@@ -34,19 +34,16 @@
       "position": "Senior Software Engineer",
       "website": "https://www.stripe.com",
       "startDate": "2021-04-19",
-      "summary": "Building secure interfaces between engineers and AWS, IaC abstractions, and control planes for infrastructure change management.",
+      "summary": "Technical lead for Stripe's infrastructure control plane platform, driving large-scale improvements in cloud management, security, and automation",
       "highlights": [
-        "Leading a year-long project to build a general infrastructure control plane, enabling safe and secure management of infrastructure resources, deployment automation, health monitoring, and automated rollbacks.",
-        "Responsible for conducting customer interviews, creating an MVP, proposing and reviewing design with technical leadership, scoping out work, and writing the majority of the code.",
-        "Built a safe and secure interface to AWS (Space Station) allowing the Infra Platform team to remove AWS credentials from most Stripe laptops. This allows for the enforcement of security invariants on 99.5% of all AWS modifications, improving Stripe's security posture.",
-        "Lead operational improvements to Space Station through better instrumentation, monitoring, and alerting. Use the improved observability to reduce command startup time by 75%, saving 800 hours of engineering time a year waiting on Space Station.",
-        "Reduced Reyes follower P99 runtime by 90%, allowing cross-region security group (firewall) rules to propagate within 2-3 minutes, improving the stability of distributed systems that depend on cross-region traffic.",
-        "Eliminated cross-region data transfer for Reyes, saving Stripe $3.7M a year in AWS data transfer costs.",
-        "Implemented a heuristic to determine affected Terraform module tests, reducing P90 CI times by 60% and saving $2.7 million each year.",
-        "Replaced the heuristic with custom Bazel rules for Terraform, and led the migration to build and test all Terraform code with Bazel.",
-        "Moved Stripe to a new AWS region with zero downtime",
-        "Wrote a codemod to migrate thousands of Terraform modules from v0.11.5 to v0.13.7 within a few weeks, and added support for modern Terraform versions.",
-        "Mentored and coached 2 interns as part of our DEI mentorship program that then converted to full time"
+        "Tech lead for a team of 5 engineers, building Spice: a general infrastructure control plane framework. Enabling rapid development of standardized control planes, accelerating Data Platform, ML, and Fleet Management opereations at Stripe.",
+        "Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that dramatically improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled a projected $9-$12 million savings in fraud loss budget through ML 1-click feature deployment.",
+        "Implemented core functionality for Space Station, a secure AWS interface, and led initiatives to remove powerful AWS credentials from most laptops, enforcing security invariants on 99.5% of AWS modifications. Spearheaded operational improvements, reducing command startup time by 75% and saving 800 engineering hours annually.",
+        "Optimized cross-region infrastructure, reducing security group rule propagation time by 90%, improving stability of distributed systems that depend on cross-region traffic, and eliminating $3.7M in annual AWS data transfer costs.",
+        "Led comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and health-checked automated Terraform deployments, improving developer productivity, reducing infrastructure drift, and increasing overall reliability.",
+        "Led critical workstreams in Stripe's Prometheus migration, implementing automated Terraform deployments to migrate thousands of alert rules. This significantly accelerated the migration process, enabling Stripe to discontinue its SignalFX contract by the renewal date, resulting in multi-million dollar annual savings.",
+        "Mentored and coached 2 interns as part of our DEI mentorship program, both of whom converted to full-time roles.",
+        "Provided ongoing mentorship to multiple team engineers, including guiding an mid-level engineer in planning a critical 6-month fleet migration, and supporting a senior engineer in leading improvements to operational posture of various internal systems. These efforts resulted in de-risked project approaches, clear milestones, and significant enhancements to system reliability and monitoring."
       ]
     },
     {
@@ -70,8 +67,7 @@
       "endDate": "2018-12-03",
       "summary": "",
       "highlights": [
-        "Wrote file system libraries with unit and integration tests in C as part common flight software libraries used by other teams.",
-        "Modeled embedded components for the Cygnus Spacecraft in C++ for SITL and HITL simulation testing."
+        "Developed system libraries in C and modeled embedded components for spacecraft in C++, focusing on simulation testing and integration with flight software."
       ]
     },
     {
@@ -82,10 +78,7 @@
       "endDate": "2015-08-11",
       "summary": "Various undergraduat research projects with the the Virginia Tech Aerospace Engineering department",
       "highlights": [
-        "Impedance Based Structural Health Monitoring Of Hybrid ZnO Smart Composites (Pi: Dr. Philen).",
-        "Utilization Of Wind Tunnel With Porous Flexible Wall For Aerodynamic Measurement (Pi. Dr. Devenport).",
-        "Modeling of a Hall Effect thruster using C++ (FA. Dr. Srinivasan).",
-        "Study of perturbations generated by stratified incompressible thermo-hydrodynamics (PI. Dr. Paterson)."
+        "Conducted various research projects in the Aerospace Engineering department, including C++ modeling of complex systems such as Hall Effect thrusters and thermo-hydrodynamic phenomena."
       ]
     }
   ],
@@ -104,44 +97,60 @@
         "MATH-4564 - Operational Methods",
         "MATH-4574 - Vector/Complex Analysis"
       ]
+    },
+    {
+      "institution": "Georgia Tech",
+      "url": "https://www.vt.edu",
+      "area": "Computer Science",
+      "studyType": "Master",
+      "startDate": "2021-08-17"
     }
   ],
-  "awards": [
-  ],
-  "publications": [
-  ],
+  "awards": [],
+  "publications": [],
   "skills": [
     {
+      "name": "Infrastructure & Cloud",
+      "keywords": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Docker",
+        "Infrastructure as Code",
+        "Prometheus",
+        "Grafana",
+        "Linux",
+        "Distributed Systems"
+      ]
+    },
+    {
       "name": "Languages",
-      "level": "",
       "keywords": [
         "Go",
-        "C++",
+        "Ruby",
         "C",
+        "C++",
         "Python",
         "Java",
-        "Ruby",
         "Javascript"
       ]
     },
     {
-      "name": "Technologies",
-      "level": "",
+      "name": "DevOps & Tools",
       "keywords": [
-        "git",
-        "AWS",
-        "Terraform",
         "Bazel",
-        "Prometheus",
         "Jenkins",
-        "Docker",
-        "Nginx",
-        "React",
-        "Sass",
-        "node.js",
-        "Webpack",
+        "Git",
+        "CI/CD",
+        "Observability",
+        "Nginx"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
         "MySQL",
-        "Linux"
+        "DynamoDB"
       ]
     }
   ],
@@ -151,16 +160,13 @@
       "fluency": "Native speaker"
     }
   ],
-  "interests": [
-  ],
-  "references": [
-  ],
-  "projects": [
-  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
   "meta": {
     "theme": "elegant",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
     "lastModified": "2017-12-24T15:53:00"
   }
- }
+}
