@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "jsonresume-theme-elegant": "^1.14.0",
-    "jsonresume-theme-paper": "bjulian5/jsonresume-theme-paper#ef1fccbfe30fa907251a2e17e70a78f4d7d01fc0"
+    "jsonresume-theme-paper": "bjulian5/jsonresume-theme-paper#368cfcd2e2a367d567079a326c2f40e4d2c62001"
   }
 }
