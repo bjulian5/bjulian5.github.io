@@ -7,7 +7,7 @@
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Senior Software Engineer with 8+ years of experience in large-scale infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
+    "summary": "Senior Software Engineer with 7+ years of experience in large-scale infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
     "location": {
       "address": "901 W ST NW",
       "postalCode": "20001",
@@ -34,14 +34,14 @@
       "position": "Senior Software Engineer",
       "website": "https://www.stripe.com",
       "startDate": "2021-04-19",
-      "summary": "Technical lead for Stripe's infrastructure control plane platform, driving large-scale improvements in cloud management, security, and automation",
+      "summary": "Technical lead for Resource Management, overseeing Stripe's core infrastructure management platform that facilates nearly all opeations done on cloud resources, and serves 400M req/year.",
       "highlights": [
-        "Tech lead for a team of 5 engineers, building Spice: a general infrastructure control plane framework. Enabling rapid development of standardized control planes, accelerating Data Platform, ML, and Fleet Management opereations at Stripe.",
-        "Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that dramatically improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled a projected $9-$12 million savings in fraud loss budget through ML 1-click feature deployment.",
-        "Implemented core functionality for Space Station, a secure AWS interface, and led initiatives to remove powerful AWS credentials from most laptops, enforcing security invariants on 99.5% of AWS modifications. Spearheaded operational improvements, reducing command startup time by 75% and saving 800 engineering hours annually.",
-        "Optimized cross-region infrastructure, reducing security group rule propagation time by 90%, improving stability of distributed systems that depend on cross-region traffic, and eliminating $3.7M in annual AWS data transfer costs.",
-        "Led comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and health-checked automated Terraform deployments, improving developer productivity, reducing infrastructure drift, and increasing overall reliability.",
-        "Led critical workstreams in Stripe's Prometheus migration, implementing automated Terraform deployments to migrate thousands of alert rules. This significantly accelerated the migration process, enabling Stripe to discontinue its SignalFX contract by the renewal date, resulting in multi-million dollar annual savings.",
+        "Project lead for a team of 5 engineers, building SPICE, Stripe's first generalized resource management platform. This was a top internal ask from product, security and infrastructure teams. Initial batch of customers are onboarding an expected to save $20M/yr along with >7,500 hours/yr of engineering effort.",
+        "Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled a projected $9-$12 million savings in fraud loss budget through ML 1-click feature deployment.",
+        "Implemented key features and enhancements in Space Station, a secure AWS interface for developers and control planes. Led an initiative to remove powerful credentials from employee laptops, enforcing security invariants on 99.5% of all AWS modifications. Spearheaded various operational improvements that resulted in 75% command startup time reduction, 60% fewer team operational tickets, and saved 1200 engineering hours a year.",
+        "Optimized Reyes follower runtime and routed traffic through VPC Gateway endpoints, reducing security group rule propagation time by 90%, improving stability of distributed systems that depend on cross-region traffic, and eliminating $3.7M in annual AWS data transfer costs.",
+        "Architected and implemented comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and automatic health-checked deployments, saving engineers 3000 hours a year in manual effort and reducing infrastructure drift across on over 750k infrastructure resources managed in Terraform",
+        "Drove critical workstreams that enabled Stripe's largest observability initiative in 2023, implementing automated Terraform deployments to migrate thousands of alert rules. This significantly accelerated the migration process, enabling Stripe to discontinue its SignalFX contract by the renewal date, resulting in multi-million dollar annual savings.",
         "Mentored and coached 2 interns as part of our DEI mentorship program, both of whom converted to full-time roles.",
         "Provided ongoing mentorship to multiple team engineers, including guiding an mid-level engineer in planning a critical 6-month fleet migration, and supporting a senior engineer in leading improvements to operational posture of various internal systems. These efforts resulted in de-risked project approaches, clear milestones, and significant enhancements to system reliability and monitoring."
       ]
@@ -52,7 +52,7 @@
       "website": "https://www.yext.com/",
       "startDate": "2018-12-03",
       "endDate": "2021-03-17",
-      "summary": "Infrastructure SME/Lead for the Consulting Team",
+      "summary": "Infrastructure Lead for the Consulting Team",
       "highlights": [
         "Lead the migration of the build system for Consulting Engineering's Go monorepo from Make to Bazel, reducing CI/CD time by 80%.",
         "Designed and built a monitoring and alerting system using Go, Prometheus, and Alertmanager for 600+ plus Pages sites, ETLs, and Jenkins jobs.",
