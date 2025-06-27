@@ -7,18 +7,17 @@
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Senior Software Engineer with 7+ years of experience in large-scale infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
+    "summary": "Senior Software Engineer with 7+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
     "location": {
-      "address": "901 W ST NW",
-      "postalCode": "20001",
-      "city": "Washington",
+      "postalCode": "10012",
+      "city": "New York",
       "countryCode": "US",
-      "region": "District of Columbia"
+      "region": "NY"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "Julian Brown",
+        "username": "julian-brown-66a35393",
         "url": "https://www.linkedin.com/in/julian-brown-66a35393/"
       },
       {
@@ -34,14 +33,14 @@
       "position": "Senior Software Engineer",
       "website": "https://www.stripe.com",
       "startDate": "2021-04-19",
-      "summary": "Technical lead for Resource Management, overseeing Stripe's core infrastructure management platform that facilates nearly all opeations done on cloud resources, and serves 400M req/year.",
+      "summary": "Technical lead for Resource Management, overseeing Stripe's core infrastructure management platform that facilitates nearly all operations done on cloud resources, and serves 400M req/year.",
       "highlights": [
         "Project lead for SPICE, Stripe's first generalized resource‑management platform (team of 5 engineers). Since GA we have fully onboarded 10 product & infrastructure teams, managing >500k resources and processing 5M reconciliation events per day. The platform is already delivering $23 M/year in fraud‑loss savings and >7,500 engineering hours/year in productivity gains.",
-        "Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled $23M savings in fraud loss budget through 1-click ML feature deployment.",
-        "Partnered with Observability, Data‑Platform, and Compute to design, build, and productionize Stripe’s first continuous Spark CPU‑profiling service; realtime Pyroscope/Grafana flamegraphs now enable engineers to micro-optimize their Spark code, cutting Hadoop capacity spend by $1.8 M per year.",
+        "Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, defined SLOs and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled $23M savings in fraud loss budget through 1-click ML feature deployment.",
+        "Partnered with Observability, Data‑Platform, and Compute to design, build, and productionize Stripe’s first continuous Spark CPU‑profiling service; real-time Pyroscope/Grafana flamegraphs now enable engineers to micro-optimize their Spark code, cutting Hadoop capacity spend by $1.8 M per year.",
         "Implemented key features and enhancements in Space Station, a secure AWS interface for developers and control planes. Led an initiative to remove powerful credentials from employee laptops, enforcing security invariants on 99.5% of all AWS modifications. Spearheaded various operational improvements that resulted in 75% command startup time reduction, 60% fewer team operational tickets, and saved 1200 engineering hours a year.",
         "Optimized Reyes follower runtime and routed traffic through VPC Gateway endpoints, reducing security group rule propagation time by 90%, improving stability of distributed systems that depend on cross-region traffic, and eliminating $3.7M in annual AWS data transfer costs.",
-        "Architected and implemented comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and automatic health-checked deployments, saving engineers 3000 hours a year in manual effort and reducing infrastructure drift across on over 750k infrastructure resources managed in Terraform",
+        "Architected and implemented comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and automatic health-checked deployments, saving engineers 3000 hours a year in manual effort and reducing infrastructure drift across over 750k infrastructure resources managed in Terraform",
         "Drove critical workstreams that enabled Stripe's largest observability initiative in 2023, implementing automated Terraform deployments to migrate thousands of alert rules. This significantly accelerated the migration process, enabling Stripe to discontinue its SignalFX contract by the renewal date, resulting in $35M annual savings.",
         "Mentored and coached 2 interns as part of Stripe's mentorship program, both of whom converted to full-time roles.",
         "Provided ongoing mentorship to multiple team engineers, including guiding a mid-level engineer in planning a critical 6-month fleet migration, and supporting a senior engineer in leading improvements to operational posture of various internal systems. These efforts resulted in de-risked project approaches, clear milestones, and significant enhancements to system reliability and monitoring."
@@ -55,8 +54,8 @@
       "endDate": "2021-03-17",
       "summary": "Infrastructure Lead for the Consulting Team",
       "highlights": [
-        "Lead the migration of the build system for Consulting Engineering's Go monorepo from Make to Bazel, reducing CI/CD time by 80%.",
-        "Designed and built a monitoring and alerting system using Go, Prometheus, and Alertmanager for 600+ plus Pages sites, ETLs, and Jenkins jobs.",
+        "Led the migration of the build system for Consulting Engineering's Go monorepo from Make to Bazel, reducing CI/CD time by 80%.",
+        "Designed and built a monitoring and alerting system using Go, Prometheus, and Alertmanager for 600+ Pages sites, ETLs, and Jenkins jobs.",
         "Improved developer productivity by building a CI tool to serve pull requests for Yext Pages sites using Go, Docker, Nginx, and Jenkins."
       ]
     },
@@ -75,9 +74,9 @@
       "company": "Virginia Tech",
       "position": "Undergraduate Research Assistant",
       "website": "https://www.aoe.vt.edu/research.html",
-      "startDate": "2017-02-11",
-      "endDate": "2015-08-11",
-      "summary": "Various undergraduat research projects with the the Virginia Tech Aerospace Engineering department",
+      "endDate": "2017-02-11",
+      "startDate": "2015-08-11",
+      "summary": "Various Undergraduate research projects with the Virginia Tech Aerospace Engineering department",
       "highlights": [
         "Conducted various research projects in the Aerospace Engineering department, including C++ modeling of complex systems such as Hall Effect thrusters and thermo-hydrodynamic phenomena."
       ]
@@ -101,7 +100,7 @@
     },
     {
       "institution": "Georgia Tech",
-      "url": "https://www.vt.edu",
+      "url": "https://www.gatech.edu",
       "area": "Computer Science",
       "studyType": "Master",
       "startDate": "2021-08-17"
@@ -114,6 +113,7 @@
       "name": "Infrastructure & Cloud",
       "keywords": [
         "AWS",
+        "Azure",
         "Kubernetes",
         "Terraform",
         "Docker",
@@ -121,7 +121,12 @@
         "Prometheus",
         "Grafana",
         "Linux",
-        "Distributed Systems"
+        "Distributed Systems",
+        "Autoscaling",
+        "Performance Optimization",
+        "Debugging (systems-level)",
+        "Incident Response",
+        "Cost Optimization"
       ]
     },
     {
@@ -133,13 +138,15 @@
         "C++",
         "Python",
         "Java",
-        "Javascript"
+        "JavaScript"
       ]
     },
     {
       "name": "DevOps & Tools",
       "keywords": [
         "Bazel",
+        "Alertmanager",
+        "Pyroscope",
         "Jenkins",
         "Git",
         "CI/CD",
@@ -151,7 +158,9 @@
       "name": "Databases",
       "keywords": [
         "MySQL",
-        "DynamoDB"
+        "DynamoDB",
+        "PostgreSQL",
+        "MongoDB"
       ]
     }
   ],
@@ -168,6 +177,6 @@
     "theme": "elegant",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2025-06-26T12:00:00Z"
   }
 }
