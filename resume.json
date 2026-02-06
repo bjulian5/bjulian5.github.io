@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Julian Brown",
-    "label": "Staff Software Engineer",
+    "label": "Senior Software Engineer",
     "picture": "",
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Staff Software Engineer with 8+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
+    "summary": "Senior Software Engineer with 8+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
     "location": {
       "postalCode": "10012",
       "city": "New York",
