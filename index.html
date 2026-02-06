@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Julian Brown</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <style>body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+}
+
+body {
+  font-size: 1.02rem;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.work-listing .position-title{
+  font-size: 0.8em;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.summary.content {
+  padding-top:0em;
+}
+
+.summary .content-text p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  margin-left:1.5em;
+  color: #424242;
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    padding-top: 30px;
+  }
+
+  .paper {
+    width:95%;
+  }
+
+  .row div {
+    display: block;
+  }
+
+  .content-cat {
+    width: 100%;
+  }
+
+  .content-text ul li {
+    width: 100%;
+  }
+
+  .content-text ul li:first-child {
+    width: 100%;
+  }
+  
+  .education-listing > .highlight {
+    margin-left: 30px;
+  }
+}
+</style>
+  <style media="print">
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+  font-size: 14px;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper {
+  padding-right: 4.25%;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width: 26%;
+  padding-left: 4.25%;
+  padding-right: 2.25%;
+  color: black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                Julian Brown
+              </p>
+              <p class="subtitle">Senior Software Engineer</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Email</li>
+                    <li>contact@julianbrown.dev</li>
+                  </ul>
+                  <ul>
+                    <li>Phone</li>
+                    <li>(571) 329-7015</li>
+                  </ul>
+                    <ul>
+                      <li>Location</li>
+                      <li>NY</li>
+                    </ul>
+              </div>
+            </div>
+          </section>
+          <section class="content summary">
+            <div class = "row">
+              <div class="content-cat">
+                Summary
+              </div>
+              <div class="content-text">
+                  <p>Senior Software Engineer with 8+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.</p>
+              </div>
+          </section
+        
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2025-09-02 till today</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="position-title">
+                          <strong>Software Engineer</strong>
+                          at <strong><a href="https://sublimesecurity.com">Sublime Security:</a></strong>
+                        </p>
+                        <p>Software Engineer on the MQL &amp; Signals team, building data and compiler infrastructure for Sublime&#x27;s email security platform.</p>
+                          <p class="highlight">Built Sublime&#x27;s data lake from scratch on AWS, scaling ML model training from 1.5B to 20B datapoints (13x) and reducing processing time from 7+ days to 36 hours, unlocking new classes of threat detection models.</p>
+                          <p class="highlight">Shipped compiler and runtime optimizations to Sublime&#x27;s query language (MQL), achieving 2.6x faster compilation, 40% lower memory usage, and 52% fewer allocations, increasing rule evaluation throughput for a pipeline processing tens of millions of messages per day.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2021-04-19 till today</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="position-title">
+                          <strong>Senior Software Engineer</strong>
+                          at <strong><a href="https://www.stripe.com">Stripe:</a></strong>
+                        </p>
+                        <p>Technical lead for Resource Management, overseeing Stripe&#x27;s core infrastructure management platform that facilitates nearly all operations done on cloud resources, and serves 400M req/year.</p>
+                          <p class="highlight">Project lead for SPICE, Stripe&#x27;s first generalized resource‑management platform (team of 5 engineers). Since GA we have fully onboarded 10 product &amp; infrastructure teams, managing &gt;500k resources and processing 5M reconciliation events per day. The platform is already delivering $23 M/year in fraud‑loss savings and &gt;7,500 engineering hours/year in productivity gains.</p>
+                          <p class="highlight">Led the entire project lifecycle, from conception to implementation. Conducted customer interviews, created an MVP, proposed and reviewed designs with technical leadership, scoped work, defined SLOs and guided the team in implementing core components. The resulting framework empowered Data Platform and ML teams to build control planes that improved efficiency: reduced Flink App provisioning time from days to minutes, decreased ML feature release time from ~1 week to under 48 hours, and enabled $23M savings in fraud loss budget through 1-click ML feature deployment.</p>
+                          <p class="highlight">Partnered with Observability, Data‑Platform, and Compute to design, build, and productionize Stripe’s first continuous Spark CPU‑profiling service; real-time Pyroscope/Grafana flamegraphs now enable engineers to micro-optimize their Spark code, cutting Hadoop capacity spend by $1.8 M per year.</p>
+                          <p class="highlight">Implemented key features and enhancements in Space Station, a secure AWS interface for developers and control planes. Led an initiative to remove powerful credentials from employee laptops, enforcing security invariants on 99.5% of all AWS modifications. Spearheaded various operational improvements that resulted in 75% command startup time reduction, 60% fewer team operational tickets, and saved 1200 engineering hours a year.</p>
+                          <p class="highlight">Optimized Reyes follower runtime and routed traffic through VPC Gateway endpoints, reducing security group rule propagation time by 90%, improving stability of distributed systems that depend on cross-region traffic, and eliminating $3.7M in annual AWS data transfer costs.</p>
+                          <p class="highlight">Architected and implemented comprehensive Terraform improvements, including: custom Bazel rules that reduced CI times by 60%, saving $2.7M annually; migration of thousands of modules to newer versions; automated PR-based plan generation; and automatic health-checked deployments, saving engineers 3000 hours a year in manual effort and reducing infrastructure drift across over 750k infrastructure resources managed in Terraform</p>
+                          <p class="highlight">Drove critical workstreams that enabled Stripe&#x27;s largest observability initiative in 2023, implementing automated Terraform deployments to migrate thousands of alert rules. This significantly accelerated the migration process, enabling Stripe to discontinue its SignalFX contract by the renewal date, resulting in $35M annual savings.</p>
+                          <p class="highlight">Mentored and coached 2 interns as part of Stripe&#x27;s mentorship program, both of whom converted to full-time roles.</p>
+                          <p class="highlight">Provided ongoing mentorship to multiple team engineers, including guiding a mid-level engineer in planning a critical 6-month fleet migration, and supporting a senior engineer in leading improvements to operational posture of various internal systems. These efforts resulted in de-risked project approaches, clear milestones, and significant enhancements to system reliability and monitoring.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2018-12-03 till 2021-03-17</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="position-title">
+                          <strong>Software Engineer</strong>
+                          at <strong><a href="https://www.yext.com/">Yext:</a></strong>
+                        </p>
+                        <p>Infrastructure Lead for the Consulting Team</p>
+                          <p class="highlight">Led the migration of the build system for Consulting Engineering&#x27;s Go monorepo from Make to Bazel, reducing CI/CD time by 80%.</p>
+                          <p class="highlight">Designed and built a monitoring and alerting system using Go, Prometheus, and Alertmanager for 600+ Pages sites, ETLs, and Jenkins jobs.</p>
+                          <p class="highlight">Improved developer productivity by building a CI tool to serve pull requests for Yext Pages sites using Go, Docker, Nginx, and Jenkins.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2017-07-17 till 2018-12-03</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="position-title">
+                          <strong>Associate Software Engineer</strong>
+                          at <strong><a href="https://www.northropgrumman.com/">Northrop Grumman:</a></strong>
+                        </p>
+                          <p class="highlight">Developed system libraries in C and modeled embedded components for spacecraft in C++, focusing on simulation testing and integration with flight software.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2015-08-11 till 2017-02-11</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="position-title">
+                          <strong>Undergraduate Research Assistant</strong>
+                          at <strong><a href="https://www.aoe.vt.edu/research.html">Virginia Tech:</a></strong>
+                        </p>
+                        <p>Various Undergraduate research projects with the Virginia Tech Aerospace Engineering department</p>
+                          <p class="highlight">Conducted various research projects in the Aerospace Engineering department, including C++ modeling of complex systems such as Hall Effect thrusters and thermo-hydrodynamic phenomena.</p>
+                    </div>
+                  </div>
+                </section>
+
+
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                          <p>2012-08-17 till 2017-05-12</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" >Virginia Tech</p>
+                        <p class="highlight">
+                          Bachelor:
+                          <i>Aerospace Engineering, minors in Math and Astronomy </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content education-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading">Georgia Tech</p>
+                        <p class="highlight">
+                          Master:
+                          <i>Computer Science </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Infrastructure &amp; Cloud:
+                        </strong>
+                    </span>
+                      AWS, Azure, Kubernetes, Terraform, Docker, Infrastructure as Code, Apache Spark, AWS Glue, Prometheus, Grafana, Linux, Distributed Systems, Autoscaling, Performance Optimization, Debugging (systems-level), Incident Response, Cost Optimization
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Languages:
+                        </strong>
+                    </span>
+                      Go, Ruby, C, C++, Python, Java, JavaScript
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          DevOps &amp; Tools:
+                        </strong>
+                    </span>
+                      Bazel, Alertmanager, Pyroscope, Jenkins, Git, CI/CD, Observability, Nginx
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Databases:
+                        </strong>
+                    </span>
+                      MySQL, DynamoDB, PostgreSQL, MongoDB, Apache Iceberg, Parquet
+                  </p>
+              </div>
+            </div>
+          </section>
+
+  <!-- LANGUAGE -->
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Languages
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>English</li>
+                        <li>Native speaker</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+            <!-- PROFILES -->
+              <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="https://www.linkedin.com/in/julian-brown-66a35393/" target="_blank">
+                              LinkedIn
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/bjulian5" target="_blank">
+                              GitHub
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+
+        </div>
+    </article>
+  </div>
+</body>
+</html>
