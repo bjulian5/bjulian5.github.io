@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Julian Brown",
-    "label": "Senior Software Engineer",
-    "picture": "./assets/jbrown.jpeg",
+    "label": "Staff Software Engineer",
+    "picture": "",
     "email": "contact@julianbrown.dev",
     "phone": "(571) 329-7015",
     "url": "https://www.julianbrown.dev/",
-    "summary": "Senior Software Engineer with 7+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
+    "summary": "Staff Software Engineer with 8+ years of experience in large-scale multi-cloud (AWS + Azure) infrastructure management and distributed systems. Technical expert in control planes, infrastructure as code, and fleet management. AWS expert with deep knowledge of Kubernetes, CI/CD pipelines, and monitoring systems. Passionate about developer productivity and building scalable, reliable infrastructure to support cutting-edge technology development.",
     "location": {
       "postalCode": "10012",
       "city": "New York",
@@ -28,6 +28,17 @@
     ]
   },
   "work": [
+    {
+      "company": "Sublime Security",
+      "position": "Software Engineer",
+      "website": "https://sublimesecurity.com",
+      "startDate": "2025-09-02",
+      "summary": "Software Engineer on the MQL & Signals team, building data and compiler infrastructure for Sublime's email security platform.",
+      "highlights": [
+        "Built Sublime's data lake from scratch on AWS, scaling ML model training from 1.5B to 20B datapoints (13x) and reducing processing time from 7+ days to 36 hours, unlocking new classes of threat detection models.",
+        "Shipped compiler and runtime optimizations to Sublime's query language (MQL), achieving 2.6x faster compilation, 40% lower memory usage, and 52% fewer allocations, increasing rule evaluation throughput for a pipeline processing tens of millions of messages per day."
+      ]
+    },
     {
       "company": "Stripe",
       "position": "Senior Software Engineer",
@@ -118,6 +129,8 @@
         "Terraform",
         "Docker",
         "Infrastructure as Code",
+        "Apache Spark",
+        "AWS Glue",
         "Prometheus",
         "Grafana",
         "Linux",
@@ -160,7 +173,9 @@
         "MySQL",
         "DynamoDB",
         "PostgreSQL",
-        "MongoDB"
+        "MongoDB",
+        "Apache Iceberg",
+        "Parquet"
       ]
     }
   ],
